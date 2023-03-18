@@ -4,18 +4,16 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <header>
-      <ul>
-        <li>
-          <NavLink to={"/"}>People</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/planets"}>Planets</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/starships"}>Starships</NavLink>
-        </li>
-      </ul>
+    <header className='navbar'>
+      <NavLink to={"/"} className="navbar-item">
+        People
+      </NavLink>
+      <NavLink to={"/planets"} className="navbar-item">
+        Planets
+      </NavLink>
+      <NavLink to={"/starships"} className="navbar-item">
+        Starships
+      </NavLink>
     </header>
   );
 }

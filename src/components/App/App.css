@@ -1,1 +1,12 @@
+* {
+    font-family: 'Roboto', Courier, monospace;
+}
 
+.wrapper {
+    width: 1280px;
+    margin:auto;
+}
+
+.main {
+    padding-top: 10px;
+}
