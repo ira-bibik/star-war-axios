@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {App} from "./components/App";
-import {People} from "./components/components/People/components/People";
+import {People} from "./components/components/People";
 import{ NotFound} from './components/components/Not Found';
 import {Planets} from './components/components/Planets';
 import {Starships} from './components/components/Starships';

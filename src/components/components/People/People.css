@@ -1,0 +1,11 @@
+.card {
+    width: 60%;
+    margin: auto;
+}
+
+.image {
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    background-color: aqua;
+}
