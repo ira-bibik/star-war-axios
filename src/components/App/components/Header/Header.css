@@ -1,0 +1,26 @@
+.navbar {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    background-color: #253bc6;
+    box-shadow: 4px 3px 17px 7px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 4px 3px 17px 7px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 4px 3px 17px 7px rgba(0, 0, 0, 0.24);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.navbar-item.active{
+    color: #000;
+}
