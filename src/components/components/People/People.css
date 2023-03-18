@@ -3,9 +3,28 @@
     margin: auto;
 }
 
+.load {
+    text-align: center;
+}
+
 .image {
-    width: 250px;
-    height: 100px;
+    height: 300px;
     margin: auto;
-    background-color: aqua;
+    display: block;
+}
+
+.person-name {
+    font-size: 30px;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    padding-left: 60px ;
+}
+
+.list-item {
+    border-top: solid rgba(0, 0, 0, 0.236) 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
