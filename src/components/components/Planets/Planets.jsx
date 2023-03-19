@@ -13,7 +13,6 @@ const Planets = () => {
     api.get(`/planets/${currentId}/`).then((res) => {
       setPlanet(res.data);
       setIsLoading(false);
-      console.log(res.data);
     });
   }, [currentId]);
   
@@ -24,13 +23,12 @@ const Planets = () => {
       ) : (
         <div className="card">
           <img
-            className="image"
             src={`https://starwars-visualguide.com/assets/img/planets/${currentId}.jpg`}
             onError={(e) =>
               (e.target.src =
                 "https://starwars-visualguide.com/assets/img/placeholder.jpg")
             }
-            alt="This is not a picture you are looking for"
+            alt={planet.name}
           />
           <h3 className="name">{planet.name}</h3>
           <ul className="list">
@@ -39,9 +37,9 @@ const Planets = () => {
             <li className="list-item">Population: {planet.population} </li>
             <li className="list-item">Gravity: {planet.gravity} </li>
           </ul>
-          <Buttons id={currentId} changeSmth={setId} />
         </div>
       )}
+      <Buttons id={currentId} changeSmth={setId} />
     </>
   );
 }
