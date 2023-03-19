@@ -23,8 +23,11 @@ const People = () => {
       ) : (
         <div className="card">
           <img
-            className="image"
             src={`https://starwars-visualguide.com/assets/img/characters/${currentId}.jpg`}
+            onError={(e) =>
+              (e.target.src =
+                "https://starwars-visualguide.com/assets/img/placeholder.jpg")
+            }
             alt={person.name}
           />
           <h3 className="name">{person.name}</h3>
@@ -33,9 +36,9 @@ const People = () => {
             <li className="list-item">Birth Year: {person.birth_year} </li>
             <li className="list-item">Eye color: {person.eye_color} </li>
           </ul>
-          <Buttons id={currentId} changeSmth={setId} />
         </div>
       )}
+      <Buttons id={currentId} changeSmth={setId} />
     </>
   );
 };
