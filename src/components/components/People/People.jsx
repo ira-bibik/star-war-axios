@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./People.css";
+import "../shared/StylesToCards.css";
 import { Buttons } from "../shared/Buttons";
-import { api, getPerson } from "../../../services/sw-service";
+import { api} from "../../../services/sw-service";
 
 const People = () => {
   const [person, setPerson] = useState({});
@@ -27,7 +27,7 @@ const People = () => {
             src={`https://starwars-visualguide.com/assets/img/characters/${currentId}.jpg`}
             alt={person.name}
           />
-          <h3 className="person-name">{person.name}</h3>
+          <h3 className="name">{person.name}</h3>
           <ul className="list">
             <li className="list-item">Gender: {person.gender} </li>
             <li className="list-item">Birth Year: {person.birth_year} </li>

@@ -1,10 +1,6 @@
 import React from 'react'
 import { Button, ButtonGroup } from "@mui/material";
 
-const styles = {
-  margin: "auto"
-}
-
 const Buttons = ({id, changeSmth}) => {
     return (
       <ButtonGroup sx={{ display: "flex", justifyContent: "center" }}>

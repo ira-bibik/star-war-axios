@@ -23,4 +23,4 @@ async function getPerson2(num) {
     }
 }
 
-export { api , getPerson };
+export { api , getPerson, getPerson2 };
