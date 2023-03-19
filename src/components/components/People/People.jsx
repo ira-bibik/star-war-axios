@@ -12,10 +12,8 @@ const People = () => {
     setIsLoading(true);
     api.get(`/people/${currentId}/`).then((res) => {
         setPerson(res.data);
-        setIsLoading(false);
+      setIsLoading(false);
     });
-    // setPerson(getPerson(currentId).data);
-    // console.log(person)
   }, [currentId]);
 
   return (

@@ -6,13 +6,21 @@ const api = axios.create({
 
 async function getPerson(num) {
     try {
-        const result = await api.get(`/people/${num}/`);
-        return result;
+        let response = {};
+        api.get(`/people/${num}/`).then((res) => response = res)
+        return response.data;
     } catch (error) {
         console.log(error)
     }
-    
 }
 
+async function getPerson2(num) {
+    try {
+        let result = await api.get(`/people/${num}/`);
+        return await result.data;
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 export { api , getPerson };
